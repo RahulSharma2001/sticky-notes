@@ -1,0 +1,126 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 99svh;
+    padding: 1em;
+    background-color: rgb(110, 216, 228);
+}
+
+
+
+.left {
+    width: 49%;
+    height: fit-content;
+    position: sticky;
+    top: 25%;
+}
+
+textarea {
+    padding: 2em;
+    font-size: 25px;
+}
+
+#submit {
+
+    width: 20%;
+    height: 5vh;
+    margin: 1em;
+    cursor: pointer;
+    background: none;
+    font-size: 1em;
+    transition: all .5s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-color: rgba(246, 164, 10, .6);
+    color: white;
+}
+
+.right {
+    width: 49%;
+    text-align: center;
+    padding: 2em;
+    background: url("https://img.freepik.com/premium-photo/colorful-sticky-notes-blue-background-space-text_106006-8782.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right h1 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.text-color {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.colorInput {
+    display: inline;
+    margin: 2em;
+}
+
+
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1em;
+    justify-content: center;
+}
+
+.newDiv {
+    width: 45%;
+    height: 200px;
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: 0 0 15px grey;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: auto;
+    position: relative;
+}
+
+.delete {
+    position: sticky;
+    bottom: 2px;
+    margin: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(0, 212, 255, 1);
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left {
+        position: static;
+        width: 100%;
+    }
+
+    .right {
+
+        width: 100%;
+    }
+}
